@@ -157,4 +157,4 @@ async def skip(ctx):
         await ctx.send("현재 재생 중인 음악이 없습니다.")
 
 # 토큰으로 봇 실행
-bot.run('MTMxODIzMTc3NTIzMDgyNDQ0OA.GO-7vX.eADxFFpQAcXqxmtYFem8oGM7GHs8C8fUqOCJjM')
+bot.run('')
