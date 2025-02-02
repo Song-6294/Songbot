@@ -3,6 +3,9 @@ from discord.ext import commands
 import yt_dlp
 import asyncio
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True  # 메시지 읽기 권한
@@ -156,5 +159,5 @@ async def skip(ctx):
     else:
         await ctx.send("현재 재생 중인 음악이 없습니다.")
 
-# 토큰으로 봇 실행
-bot.run('')
+# 환경변수에서 토큰 로드
+bot.run(os.getenv('DISCORD_TOKEN'))  # .env 파일에서 로드된 토큰 사용
